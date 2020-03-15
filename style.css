@@ -1,21 +1,25 @@
 .bg-rope {
-  background-image: url("ropes/11.jpeg");
+  background-image: url("ropes/3.jpeg");
+  background-size: 100%;
 }
 .btn-rounded {
   border-radius: 20%;
 }
 .img-rounded {
   border-radius: 50%;
+  position: relative;
+  left: -180px;
+  top: -25px;
 }
 .spill-out {
-  position: relative;
+  /* position: relative;
   left: 100px;
-  top: 35px;
+  top: 35px; */
 }
 .spill-out-more {
-  position: relative;
+  /* position: relative;
   left: 150px;
-  top: 150px;
+  top: 150px; */
 }
 .bg-card {
   background-color: darkgrey;
@@ -24,4 +28,14 @@
 .empty-row {
   min-height: 30vh;
   border-bottom: 5px solid rgb(32, 31, 31);
+}
+.bg-primary {
+  background-color: rgb(150, 135, 100) !important;
+}
+.btn-primary {
+  background-color: rgb(150, 135, 100) !important;
+  border-color: rgb(138, 124, 92) !important;
+}
+.border-primary {
+  border-color: rgb(138, 124, 92) !important;
 }
