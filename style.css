@@ -1,41 +1,66 @@
-.bg-rope {
+.bg-header {
   background-image: url("ropes/3.jpeg");
   background-size: 100%;
 }
-.btn-rounded {
-  border-radius: 20%;
-}
-.img-rounded {
-  border-radius: 50%;
-  position: relative;
-  left: -180px;
-  top: -25px;
-}
-.spill-out {
-  /* position: relative;
-  left: 100px;
-  top: 35px; */
-}
-.spill-out-more {
-  /* position: relative;
-  left: 150px;
-  top: 150px; */
-}
-.bg-card {
-  background-color: darkgrey;
-}
 
+.btn-rounded {
+  border-radius: 50%;
+}
+.card-img-offset {
+  position: relative;
+  left: -8vh;
+  top: -6 vh;
+}
+.spill-out-btn {
+  position: relative;
+  left: 15vh;
+  top: 6vh;
+}
+.spill-out-card {
+  position: relative;
+  left: 5vh;
+  top: 5vh;
+}
 .empty-row {
-  min-height: 30vh;
-  border-bottom: 5px solid rgb(32, 31, 31);
+  min-height: 10vh;
 }
 .bg-primary {
   background-color: rgb(150, 135, 100) !important;
 }
+.bg-secondary {
+  background-color: rgb(223, 207, 170) !important;
+}
+.btn-secondary {
+  background-color: rgb(223, 207, 170) !important;
+}
 .btn-primary {
   background-color: rgb(150, 135, 100) !important;
-  border-color: rgb(138, 124, 92) !important;
+  border-color: rgb(119, 107, 80) !important;
 }
 .border-primary {
-  border-color: rgb(138, 124, 92) !important;
+  border-color: rgb(150, 135, 100) !important;
+  border-width: 10px !important;
+}
+
+.border-secondary {
+  border-width: 1rem !important;
+  border-color: rgb(223, 207, 170) !important;
+}
+.text-primary {
+  color: rgb(119, 107, 80) !important;
+}
+@media (max-width: 575.98px) {
+  footer {
+    font-size: xx-small;
+  }
+  .mobile-invisible-row {
+    height: 20vh;
+  }
+  .bg-header {
+    background-image: url("ropes/3.jpeg");
+    background-size: 400%;
+  }
+  .footer-text {
+    text-align: center !important;
+  }
 }

@@ -15,22 +15,33 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Site Mock-Week 1 Checkpoint</title>
   </head>
   <body>
-    <header class="container-fluid bg-rope text-white">
+    <header class="container-fluid bg-header text-white">
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-transparent col-12 justify-content-between"
       >
         <brand-link>
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a
+            class="navbar-brand py-1 px-1  border border-secondary rounded"
+            href="#"
+          >
+            <h1 class="mb-0 font-weight-bolder">THREAD<br />&<br />STRAND</h1>
+            <h3 class="text-right mb-0 font-italic">enthusiast</h3>
+
+            <p class="text-right mb-0">Quarterly Online</p>
+          </a>
         </brand-link>
         <links>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler bg-primary mt-3"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -45,11 +56,11 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link " href="#"
-                  >Home <span class="sr-only">(current)</span></a
+                  >Famous ropes <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">History of ropes</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -61,13 +72,14 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Anatomy of a rope
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">the end</a>
+                  <a class="dropdown-item" href="#">middle</a>
+                  <a class="dropdown-item" href="#">the other end</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">overview</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -76,15 +88,16 @@
                   href="#"
                   tabindex="-1"
                   aria-disabled="true"
-                  >Disabled</a
+                  >ladders</a
                 >
               </li>
             </ul>
           </div>
         </links>
       </nav>
+
       <div class="row text-white justify-content-between">
-        <div class="col-12 col-md-5 mt-3 ml-3">
+        <div class="col-12 col-md-5 mt-3 order-1 order-md-0">
           <h1>Lorem ipsum dolor, sit</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
@@ -92,11 +105,14 @@
             perferendis eaque ullam, voluptatem non esse consequuntur cupiditate
             architecto dignissimos minus labore.
           </p>
-          <button class="btn btn-secondary btn-rounded">
-            Learn more about ropes
-          </button>
+          <a
+            href="https://en.wikipedia.org/wiki/Rope"
+            class="btn btn-primary rounded"
+            role="button"
+            >Rope Wiki page</a
+          >
         </div>
-        <div class="col-12 col-md-5 my-5 text-center">
+        <div class="col-12 col-md-5 my-5 order-0 order-md-1 text-center">
           <video width="320vh" height="240vh" controls>
             <source src="ropevideo.mp4" type="video/mp4" />
             <source src="movie.ogg" type="video/ogg" />
@@ -105,61 +121,77 @@
         </div>
       </div>
     </header>
+
     <main class="container-fluid">
       <div class="row bg-secondary">
         <div class="col-12 col-md-4">
-          <div class="card spill-out-more" style="width: 18rem;">
+          <div
+            class="card spill-out-card border border-radius border-primary"
+            style="width: 18rem;"
+          >
             <div class="card-body bg-white">
               <img
-                class="img-rounded image-larger"
+                class=" card-img-offset rounded-circle"
                 src="ropes\1.jpeg"
                 alt="Smiley face"
                 height="250vh"
                 width="250vh"
               />
-              <p class="card-text"></p>
+
               <h3>Lorem ipsum, dolor sit amet consectetur</h3>
               <p>
                 adipisicing elit. Error maxime adipisci sapiente modi enim.
                 Reiciendis, culpa. Unde dolore, magni beatae obcaecati iure
                 incidunt quidem quod, fugiat nihil dolorem soluta natus?
               </p>
-              <button class="btn btn-primary spill-out">
+              <button class="btn btn-secondary spill-out-btn text-primary">
                 More rope pictures...
               </button>
             </div>
           </div>
-        </div>
 
+          <div class="row">
+            <div class="col-12 mobile-invisible-row"></div>
+          </div>
+        </div>
         <div class="col-12 col-md-4">
-          <div class="card spill-out-more" style="width: 18rem;">
+          <div
+            class="card spill-out-card border border-radius border-primary"
+            style="width: 18rem;"
+          >
             <div class="card-body bg-white">
               <img
-                class="img-rounded image-larger"
+                class="card-img-offset rounded-circle"
                 src="ropes\2.jpeg"
                 alt="Smiley face"
                 height="250rem"
                 width="250rem"
               />
               <p class="card-text"></p>
-
               <h3>Lorem ipsum, dolor sit amet consectetur</h3>
               <p>
                 adipisicing elit. Error maxime adipisci sapiente modi enim.
                 Reiciendis, culpa. Unde dolore, magni beatae obcaecati iure
                 incidunt quidem quod, fugiat nihil dolorem soluta natus?
               </p>
-              <button class="btn btn-primary spill-out">
+              <button class="btn btn-secondary spill-out-btn text-primary">
                 More string pictures...
               </button>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-12 mobile-invisible-row"></div>
+          </div>
         </div>
         <div class="col-12 col-md-4">
-          <div class="card spill-out-more" style="width: 18rem;">
+          <div
+            class="card spill-out-card border border-radius border-primary"
+            style="width: 18rem;"
+          >
             <div class="card-body bg-white">
               <img
-                class="img-rounded image-larger"
+                class="card-img-offset rounded-circle"
                 src="ropes\3.jpeg"
                 alt="Smiley face"
                 height="250rem"
@@ -172,19 +204,24 @@
                 Reiciendis, culpa. Unde dolore, magni beatae obcaecati iure
                 incidunt quidem quod, fugiat nihil dolorem soluta natus?
               </p>
-              <button class="btn btn-primary spill-out">
+              <button class="btn btn-secondary spill-out-btn text-primary">
                 More twine pictures...
               </button>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-12 mobile-invisible-row"></div>
+          </div>
         </div>
       </div>
+
       <div class="row">
         <div
-          class="col-12  bg-transparent empty-row border-3 border-primary border-top-0 border-right-0 border-left-0"
+          class="col-12  bg-transparent border-primary border-bottom-1 empty-row"
         ></div>
       </div>
-      <div class="row my-5 py-5 justify-content-around">
+      <div class="row  py-5 justify-content-around bg-secondary">
         <div class="col-12 col-md-4">
           <img src="ropes\6.jpg" width="100%" alt="" />
         </div>
@@ -208,21 +245,36 @@
           </p>
         </div>
       </div>
-      <div
-        class="row bg-primary text-center text-white justify-content-around pt-5"
-      >
-        <div class="col-2">
-          <img src="ropes/johnny-automatic-ball-of-twine.svg" alt="" />THREAD &
-          STRAND<br />enthusiast
+    </main>
+
+    <footer class="container-fluid bg-primary text-white">
+      <div class="row justify-content-center">
+        <div class="col-md-2  border border-secondary rounded mt-5">
+          <h1 class="mb-0 font-weight-bolder">THREAD<br />&<br />STRAND</h1>
+          <h3 class="text-right mb-0 font-italic">enthusiast</h3>
+
+          <p class="text-right mb-0">Quarterly Online</p>
         </div>
       </div>
-    </main>
-    <footer class="container-fluid">
-      <div class="row bg-dark text-white justify-content-between p-2">
-        <div class="col-6 col-md-2 text-left">
-          <p>&copy;This is a copyright symbol</p>
+
+      <div
+        class="row bg-primary text-center text-white justify-content-center py-3"
+      >
+        <div class="col-md-3">
+          <i class="fab fa-facebook-square fa-2x mx-2"></i>
+          <i class="fab fa-instagram-square fa-2x mx-2"></i>
+          <i class="fab fa-youtube fa-2x mx-2"></i>
+          <i class="fab fa-twitter fa-2x mx-2"></i>
         </div>
-        <div class="col-6 col-md-2 text-right"><p>Site created in jest</p></div>
+      </div>
+
+      <div class="row justify-content-between p-2">
+        <div class="col-md-2 text-left footer-text">
+          <p>&copy; This is a copyright symbol</p>
+        </div>
+        <div class="col-md-2 text-right footer-text">
+          <p>site created by Dennis Warner</p>
+        </div>
       </div>
     </footer>
 
